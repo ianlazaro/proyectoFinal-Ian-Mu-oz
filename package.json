@@ -1,0 +1,23 @@
+{
+  "name": "proyectofinal-ian-mu-oz",
+  "version": "1.0.0",
+  "description": "Este es mi proyecto final de Desarrollo Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianlazaro/proyectoFinal-Ian-Mu-oz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ianlazaro/proyectoFinal-Ian-Mu-oz/issues"
+  },
+  "homepage": "https://github.com/ianlazaro/proyectoFinal-Ian-Mu-oz#readme",
+  "dependencies": {
+    "sass": "^1.85.1"
+  }
+}
