@@ -1,0 +1,123 @@
+* {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    header nav ul{
+        display: flex;
+        gap: 30px;
+        padding: 100px;
+    }
+    
+    header img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    /* estilo de los links navegadores */
+    header nav ul li a {
+        text-decoration: none;
+        color: orange;
+    }
+    
+    .title_desc_home {
+        text-align: center;
+        color: #333333;
+    }
+    
+    /* Esta clase es el titulo principal del header de todo el sitio web */
+    .title_principal {
+        color: rgb(18, 131, 93);
+        font-size: 100px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    body {
+        font-style: normal;
+        padding: 0px;
+        margin: 0px;
+        background-color: bisque;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+    
+    main {
+        text-align: center;
+        color: black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: (3%, 25%, 3%);
+        justify-content: center; 
+        align-items: center;
+        display: grid;
+        row-gap: 1rem;
+        padding: 1.5rem;
+    }
+    main section div{
+        display: flex;
+        justify-content: center;
+    }
+    main .textos{
+        display: flex;
+        text-align: center;
+    }
+    
+    main .bottom{
+        background-color: #2b2b2b;
+        color: whitesmoke;
+        padding: 10px;
+        display: inline-block;
+        margin-top: 10px;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 50px;
+    
+    }
+    
+    main .imgHome{
+        display: flex;
+        justify-content: center;
+        object-fit: cover;
+        height: 100%;
+    }
+    
+    /* Clase Especifica para los parrafos */
+    .brown {
+        color: brown;
+    }
+    
+    #violeta {
+        color: violet;
+    }
+    section{
+        background-color:beige;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    section div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: whitesmoke;
+    }
+    
+    footer {
+        background-color: #33333398;
+        text-align: center;
+        color: whitesmoke;
+    }
+    
+    @media screen and (max-width: 600px){
+        footer{
+            padding: 30px;
+            background-color: orange;
+        }
+    }
+    @media screen and (min-width: 1024px){
+        main{
+            background-color: forestgreen;
+            text-align: center;
+        }
+    }
