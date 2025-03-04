@@ -1,7 +1,7 @@
 //color fondo
 $background-color: rgb(233, 202, 162);
 //estilo de los links navegadores
-$color-seis: orange;
+$colorSeis: rgb(151, 125, 75);
 $color7: #333333;
 //titulo principal del header de todo el sitio web
 $color8: rgb(18, 131, 93);
@@ -22,3 +22,10 @@ $background-color3: beige;
 $background-color4: darkturquoise;
 //@media screen and (min-width: 1024px) main
 $background-color5: forestgreen;
+
+@mixin parametrosDeTitulos {
+    overflow: hidden;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+}
+
