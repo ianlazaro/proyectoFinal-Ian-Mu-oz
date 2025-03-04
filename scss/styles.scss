@@ -1,137 +1,155 @@
 //import de varibles 
-@use "utilidades/variables";
-@use "utilidades/nosotros";
-@use "utilidades/comocomprar.scss";
-@use "utilidades/maquinaria.scss";
-@use "utilidades/index.scss";
+@use "variables";
+@use "nosotros";
+@use "comocomprar.scss";
+@use "maquinaria.scss";
+@use "index.scss";
+
 * {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-    
-    /* nesting */
-    header nav ul{
-        text-align: center;
-        display: flex;
-        gap: 30px;
-        padding: 100px;
-        img{
-        width: 100%;
-        height: 100%;
-        }
-    }
-    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* nesting */
+header nav ul {
+    text-align: center;
+    display: flex;
+    gap: 30px;
+    padding: 100px;
+
     /* estilo de los links navegadores */
-    header nav ul li a {
+    li a {
         display: flex;
         text-decoration: none;
         color: orange;
     }
-    
-    .title_desc_home {
-        text-align: center;
-        color: #333333;
-    }
-    
-    /* Esta clase es el titulo principal del header de todo el sitio web */
-    .title_principal {
-        color: rgb(18, 131, 93);
-        font-size: 100px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    
-    body {
-        text-align: center;
-        font-style: normal;
-        padding: 0px;
-        margin: 0px;
-        background-color: bisque;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        
-    }
-    
-    main {
-        text-align: center;
-        color: black;
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-content: center; 
-        align-items: center;
-        display: grid;
-        row-gap: 1rem;
-        padding: 1.5rem;
 
-        section{
-            background-color: green;
-        }
-        section div{
-            text-align: center;
-            display: flex;
-            justify-content: center;
-    }
-
-    }
-    main .textos{
-        display: grid;
-        text-align: center;
-    }
-    
-    main .bottom{
-        background-color: #2b2b2b;
-        color: whitesmoke;
-        padding: 10px;
-        display: inline-block;
-        margin-top: 10px;
-        border-bottom-left-radius: 50px;
-        border-top-right-radius: 50px;
-    
-    }
-    
-    main .imgHome{
-        display: flex;
-        justify-content: center;
-        object-fit: cover;
+    img {
+        width: 100%;
         height: 100%;
     }
-    
-    /* Clase Especifica para los parrafos */
-    .brown {
-        color: brown;
+}
+
+.title_desc_home {
+    text-align: center;
+    color: #333333;
+}
+
+/* Esta clase es el titulo principal del header de todo el sitio web */
+.title_principal {
+    color: rgb(18, 131, 93);
+    font-size: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    text-align: center;
+    font-style: normal;
+    padding: 0px;
+    margin: 0px;
+    background-color: bisque;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+main {
+    text-align: center;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    row-gap: 1rem;
+    padding: 1.5rem;
+
+    section {
+        background-color: green;
     }
-    
-    #violeta {
-        color: violet;
-    }
-    section{
-        background-color:beige;
+
+    section div {
+        text-align: center;
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
-    }
-    section div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        $color10: whitesmoke;
-    }
-    
-    footer {
-        background-color: #33333398;
-        text-align: center;
-        color: whitesmoke;
-    }
-    
-    @media screen and (max-width: 600px){
-        footer{
-            padding: 30px;
-            background-color: orange;
-        }
-    }
-    @media screen and (min-width: 1024px){
-        main{
-            background-color: forestgreen;
+
+        main .textos {
+            display: grid;
             text-align: center;
         }
+
+        main .bottom {
+            background-color: #2b2b2b;
+            color: whitesmoke;
+            padding: 10px;
+            display: inline-block;
+            margin-top: 10px;
+            border-bottom-left-radius: 50px;
+            border-top-right-radius: 50px;
+
+        }
+
     }
+}
+
+main .bottom {
+    background-color: #2b2b2b;
+    color: whitesmoke;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+}
+
+main .imgHome {
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    height: 100%;
+}
+
+/* Clase Especifica para los parrafos */
+.brown {
+    color: brown;
+}
+
+#violeta {
+    color: violet;
+}
+
+section {
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    $color10: whitesmoke;
+}
+
+footer {
+    background-color: #33333398;
+    text-align: center;
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        padding: 30px;
+        background-color: orange;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        background-color: forestgreen;
+        text-align: center;
+    }
+}
