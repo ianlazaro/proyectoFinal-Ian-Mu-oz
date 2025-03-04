@@ -1,3 +1,9 @@
+//import de varibles 
+@use "utilidades/variables";
+@use "utilidades/nosotros";
+@use "utilidades/comocomprar.scss";
+@use "utilidades/maquinaria.scss";
+@use "utilidades/index.scss";
 * {
         list-style: none;
         padding: 0;
@@ -5,19 +11,21 @@
         box-sizing: border-box;
     }
     
+    /* nesting */
     header nav ul{
+        text-align: center;
         display: flex;
         gap: 30px;
         padding: 100px;
-    }
-    
-    header img{
+        img{
         width: 100%;
         height: 100%;
+        }
     }
     
     /* estilo de los links navegadores */
     header nav ul li a {
+        display: flex;
         text-decoration: none;
         color: orange;
     }
@@ -35,6 +43,7 @@
     }
     
     body {
+        text-align: center;
         font-style: normal;
         padding: 0px;
         margin: 0px;
@@ -47,8 +56,7 @@
         text-align: center;
         color: black;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: (3%, 25%, 3%);
+        grid-template-columns: 1fr;
         justify-content: center; 
         align-items: center;
         display: grid;
@@ -56,6 +64,7 @@
         padding: 1.5rem;
     }
     main section div{
+        text-align: center;
         display: flex;
         justify-content: center;
     }
@@ -100,7 +109,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        color: whitesmoke;
+        $color10: whitesmoke;
     }
     
     footer {
