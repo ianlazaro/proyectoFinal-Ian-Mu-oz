@@ -62,14 +62,19 @@
         display: grid;
         row-gap: 1rem;
         padding: 1.5rem;
+
+        section{
+            background-color: green;
+        }
+        section div{
+            text-align: center;
+            display: flex;
+            justify-content: center;
     }
-    main section div{
-        text-align: center;
-        display: flex;
-        justify-content: center;
+
     }
     main .textos{
-        display: flex;
+        display: grid;
         text-align: center;
     }
     
